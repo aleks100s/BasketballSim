@@ -20,6 +20,7 @@
 		27D14F752AFE0B6300FFB80B /* Image+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED67D6352917E3E40097D139 /* Image+Ext.swift */; };
 		27D14F772AFE240900FFB80B /* GameAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D14F762AFE240900FFB80B /* GameAttributes.swift */; };
 		27D14F782AFE240900FFB80B /* GameAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D14F762AFE240900FFB80B /* GameAttributes.swift */; };
+		27D14F7B2AFE2D6000FFB80B /* ContainerBackgroundForWidgetModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D14F792AFE2D6000FFB80B /* ContainerBackgroundForWidgetModifier.swift */; };
 		ED67D6222917E3510097D139 /* BasketballSimApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED67D6212917E3510097D139 /* BasketballSimApp.swift */; };
 		ED67D6262917E3520097D139 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED67D6252917E3520097D139 /* Assets.xcassets */; };
 		ED67D6292917E3520097D139 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED67D6282917E3520097D139 /* Preview Assets.xcassets */; };
@@ -67,6 +68,8 @@
 		276E89D52AFDFE8800932811 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		27D14F722AFE0A9900FFB80B /* LiveActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveActivityView.swift; sourceTree = "<group>"; };
 		27D14F762AFE240900FFB80B /* GameAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameAttributes.swift; sourceTree = "<group>"; };
+		27D14F792AFE2D6000FFB80B /* ContainerBackgroundForWidgetModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerBackgroundForWidgetModifier.swift; sourceTree = "<group>"; };
+		27D14F7C2AFE2FF900FFB80B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		ED67D61E2917E3510097D139 /* BasketballSim.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BasketballSim.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED67D6212917E3510097D139 /* BasketballSimApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketballSimApp.swift; sourceTree = "<group>"; };
 		ED67D6252917E3520097D139 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -119,6 +122,7 @@
 				276E89D52AFDFE8800932811 /* Info.plist */,
 				27D14F722AFE0A9900FFB80B /* LiveActivityView.swift */,
 				27D14F762AFE240900FFB80B /* GameAttributes.swift */,
+				27D14F792AFE2D6000FFB80B /* ContainerBackgroundForWidgetModifier.swift */,
 			);
 			path = GameWidget;
 			sourceTree = "<group>";
@@ -145,6 +149,7 @@
 		ED67D6202917E3510097D139 /* BasketballSim */ = {
 			isa = PBXGroup;
 			children = (
+				27D14F7C2AFE2FF900FFB80B /* Info.plist */,
 				ED67D6212917E3510097D139 /* BasketballSimApp.swift */,
 				ED67D62F2917E37C0097D139 /* GameView.swift */,
 				ED67D6342917E3C20097D139 /* Model */,
@@ -287,6 +292,7 @@
 			files = (
 				276E89D22AFDFE8700932811 /* GameWidget.swift in Sources */,
 				278324512AFE032B0040B76D /* GameState.swift in Sources */,
+				27D14F7B2AFE2D6000FFB80B /* ContainerBackgroundForWidgetModifier.swift in Sources */,
 				27D14F782AFE240900FFB80B /* GameAttributes.swift in Sources */,
 				27D14F732AFE0A9900FFB80B /* LiveActivityView.swift in Sources */,
 				276E89D02AFDFE8700932811 /* GameLiveActivity.swift in Sources */,
@@ -439,7 +445,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -493,7 +499,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -516,12 +522,14 @@
 				DEVELOPMENT_TEAM = H69U55MWXW;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BasketballSim/Info.plist;
 				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -549,12 +557,14 @@
 				DEVELOPMENT_TEAM = H69U55MWXW;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BasketballSim/Info.plist;
 				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
