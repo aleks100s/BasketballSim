@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import ActivityKit
 
 final class GameModel: ObservableObject, GameSimulatorDelegate {
 
@@ -14,6 +15,7 @@ final class GameModel: ObservableObject, GameSimulatorDelegate {
                                           scoringTeamName: "",
                                           lastAction: "")
     let simulator = GameSimulator()
+	private var activity: Activity<GameAttributes>?
 
     init() {
         simulator.delegate = self
@@ -21,12 +23,26 @@ final class GameModel: ObservableObject, GameSimulatorDelegate {
 
     func didUpdate(gameState: GameState) {
         self.gameState = gameState
+		
+		Task {
+			await activity?.update(using: .init(game: gameState))
+		}
     }
 
     func didCompleteGame() {
-
+		Task {
+			await activity?.end(using: .init(game: simulator.endGame()), dismissalPolicy: .default)
+		}
     }
 
-
     // Live Activity code goes here
+	func startLiveActivity() {
+		let attributes = GameAttributes(homeTeam: "warriors", awayTeam: "bulls")
+		let currentGameState = GameAttributes.ContentState(game: gameState)
+		do {
+			activity = try Activity.request(attributes: attributes, contentState: currentGameState)
+		} catch {
+			print(error.localizedDescription)
+		}
+	}
 }

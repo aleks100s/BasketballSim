@@ -12,6 +12,6 @@ import SwiftUI
 struct GameWidgetBundle: WidgetBundle {
     var body: some Widget {
         GameWidget()
-        GameWidgetLiveActivity()
+        GameLiveActivity()
     }
 }

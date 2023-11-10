@@ -8,7 +8,6 @@
 import SwiftUI
 
 extension Image {
-
     func teamLogoModifier(frame: CGFloat? = nil) -> some View {
         self
             .resizable()
