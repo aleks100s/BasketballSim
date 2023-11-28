@@ -70,7 +70,7 @@
 		27D14F762AFE240900FFB80B /* GameAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameAttributes.swift; sourceTree = "<group>"; };
 		27D14F792AFE2D6000FFB80B /* ContainerBackgroundForWidgetModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerBackgroundForWidgetModifier.swift; sourceTree = "<group>"; };
 		27D14F7C2AFE2FF900FFB80B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		ED67D61E2917E3510097D139 /* BasketballSim.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BasketballSim.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED67D61E2917E3510097D139 /* BasketballSim0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BasketballSim0.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED67D6212917E3510097D139 /* BasketballSimApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketballSimApp.swift; sourceTree = "<group>"; };
 		ED67D6252917E3520097D139 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ED67D6282917E3520097D139 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -140,7 +140,7 @@
 		ED67D61F2917E3510097D139 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				ED67D61E2917E3510097D139 /* BasketballSim.app */,
+				ED67D61E2917E3510097D139 /* BasketballSim0.app */,
 				276E89C62AFDFE8700932811 /* GameWidgetExtension.appex */,
 			);
 			name = Products;
@@ -208,9 +208,9 @@
 			productReference = 276E89C62AFDFE8700932811 /* GameWidgetExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
-		ED67D61D2917E3510097D139 /* BasketballSim */ = {
+		ED67D61D2917E3510097D139 /* BasketballSim0 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = ED67D62C2917E3520097D139 /* Build configuration list for PBXNativeTarget "BasketballSim" */;
+			buildConfigurationList = ED67D62C2917E3520097D139 /* Build configuration list for PBXNativeTarget "BasketballSim0" */;
 			buildPhases = (
 				ED67D61A2917E3510097D139 /* Sources */,
 				ED67D61B2917E3510097D139 /* Frameworks */,
@@ -222,9 +222,9 @@
 			dependencies = (
 				276E89D72AFDFE8800932811 /* PBXTargetDependency */,
 			);
-			name = BasketballSim;
+			name = BasketballSim0;
 			productName = BasketballSim;
-			productReference = ED67D61E2917E3510097D139 /* BasketballSim.app */;
+			productReference = ED67D61E2917E3510097D139 /* BasketballSim0.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -258,7 +258,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				ED67D61D2917E3510097D139 /* BasketballSim */,
+				ED67D61D2917E3510097D139 /* BasketballSim0 */,
 				276E89C52AFDFE8700932811 /* GameWidgetExtension */,
 			);
 		};
@@ -337,7 +337,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = H69U55MWXW;
+				DEVELOPMENT_TEAM = 579X949DTW;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -352,7 +352,7 @@
 				);
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.yourwebsitename.BasketballSim.GameWidget;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alextos.BasketballSim.GameWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
@@ -371,7 +371,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = H69U55MWXW;
+				DEVELOPMENT_TEAM = 579X949DTW;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -386,7 +386,7 @@
 				);
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.yourwebsitename.BasketballSim.GameWidget;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alextos.BasketballSim.GameWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -519,10 +519,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"BasketballSim/Preview Content\"";
-				DEVELOPMENT_TEAM = H69U55MWXW;
+				DEVELOPMENT_TEAM = 579X949DTW;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BasketballSim/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Симулятор баскетбольного матча";
 				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -535,7 +536,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.yourwebsitename.BasketballSim;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alextos.BasketballSim;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -554,10 +555,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"BasketballSim/Preview Content\"";
-				DEVELOPMENT_TEAM = H69U55MWXW;
+				DEVELOPMENT_TEAM = 579X949DTW;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BasketballSim/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Симулятор баскетбольного матча";
 				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -570,7 +572,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.yourwebsitename.BasketballSim;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alextos.BasketballSim;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -600,7 +602,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		ED67D62C2917E3520097D139 /* Build configuration list for PBXNativeTarget "BasketballSim" */ = {
+		ED67D62C2917E3520097D139 /* Build configuration list for PBXNativeTarget "BasketballSim0" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				ED67D62D2917E3520097D139 /* Debug */,

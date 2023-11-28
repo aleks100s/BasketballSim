@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "ED67D61D2917E3510097D139"
-               BuildableName = "BasketballSim.app"
-               BlueprintName = "BasketballSim"
+               BuildableName = "BasketballSim0.app"
+               BlueprintName = "BasketballSim0"
                ReferencedContainer = "container:BasketballSim.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -44,8 +44,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "ED67D61D2917E3510097D139"
-            BuildableName = "BasketballSim.app"
-            BlueprintName = "BasketballSim"
+            BuildableName = "BasketballSim0.app"
+            BlueprintName = "BasketballSim0"
             ReferencedContainer = "container:BasketballSim.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -61,8 +61,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "ED67D61D2917E3510097D139"
-            BuildableName = "BasketballSim.app"
-            BlueprintName = "BasketballSim"
+            BuildableName = "BasketballSim0.app"
+            BlueprintName = "BasketballSim0"
             ReferencedContainer = "container:BasketballSim.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
